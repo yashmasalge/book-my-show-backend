@@ -1,11 +1,11 @@
 {
   "name": "bmsbackend",
   "version": "1.0.0",
-  "description": "",
+  "description": "BMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index"
+    "dev" : "npx nodemon index",
+  "start": "node index"
   },
   "author": "yash",
   "license": "ISC",
