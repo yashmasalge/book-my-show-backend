@@ -4,8 +4,8 @@
   "description": "BMS",
   "main": "index.js",
   "scripts": {
-    "dev" : "npx nodemon index",
-  "start": "node index"
+    "dev": "npx nodemon index",
+    "start": "node index"
   },
   "author": "yash",
   "license": "ISC",
