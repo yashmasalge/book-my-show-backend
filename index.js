@@ -30,7 +30,13 @@ app.use(cors());
 
 // http://localhost:3000/
 app.get("/", (req, res) => {
-    return res.json({"WELCOME": `to my Backend Software for the Book Company`});
+    try{
+        const getAllMovies = await MoviesModel.find();
+        return res.json(getAllMovies);
+     }
+     catch(e){
+         return res.status(500).json({e : e.Message});
+     }
 });
 
 // http://localhost:5000/movies
