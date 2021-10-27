@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(cors());
 
 // http://localhost:3000/
-app.get("/", (req, res) => {
+app.get("/",async (req, res) => {
     try{
         const getAllMovies = await MoviesModel.find();
         return res.json(getAllMovies);
